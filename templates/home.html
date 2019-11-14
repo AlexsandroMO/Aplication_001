@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h3>Welcome to Applications Development</h3>
+  <br>
+   
+    <img src="http://www.centrohermes.com.br/wp-content/uploads/2018/05/GPJ.jpg" alt="Intro Site" width=350 height=250>
+
+<!-- https://cdn.datafloq.com/cache/blog_pictures/878x531/7-python-gui-frameworks-web-developers.jpg -->
+
+
+  <br>
+  <br>
+  <div class="div.margem">
+   <p></p>
+    </div>
+    <br>
+    <div class="content-section">
+    <h3>Applications</h3>
+      <p class='text-muted'>Dataset Development</p>
+        
+          <ul class="list-group">
+            <td>
+                {% if status == true%}
+                <li class="list-group-item list-group-item-light"><a href="/userarea_loged" class="link_thumb" style="color: #848484;">NCR / RAI / CC Tables &nbsp &nbsp &nbsp <img src="https://queroficarrico.com/blog/wp-content/uploads/2014/01/planilhas-financeiras.jpg" alt="some text" width=80 height=50></li>
+                {% else %}
+                <li class="list-group-item list-group-item-light"><a href="/login" class="link_thumb" style="color: #848484;">NCR / RAI / CC Tables &nbsp &nbsp &nbsp <img src="https://queroficarrico.com/blog/wp-content/uploads/2014/01/planilhas-financeiras.jpg" alt="some text" width=80 height=50></li>
+                {% endif %}
+            </td>
+
+                <li class="list-group-item list-group-item-light"><a href="/del_arq" class="link_thumb" style="color: #848484;">Delet Files &nbsp &nbsp &nbsp <img src="https://queroficarrico.com/blog/wp-content/uploads/2014/01/planilhas-financeiras.jpg" alt="some text" width=80 height=50></li>
+
+
+          </ul>
+        <br>
+      </div>
+
+{% endblock content %}

@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+  <body>
+    <div class="container">
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+             
+  <div id="second">
+      <div class="myform form ">
+          <div class="logo mb-3">
+              <div class="col-md-12 text-center">
+                <br>
+                <br>
+                <br>
+                <h1 >Signup</h1>
+              </div>
+          </div>
+          <form action="/dbname" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="text"  name="firstname" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter Firstname">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="text"  name="lastname" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter Lastname">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name="email1"  class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter Email">
+              </div>
+                <label for="exampleInputEmail1">Confirm Email address</label>
+                <input type="email" name="email2"  class="form-control" id="email2" aria-describedby="emailHelp" placeholder="Confirm Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password</label>
+                <input type="password" name="password1" id="password1"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Password Confimr</label>
+                <input type="password" name="password2" id="password2"  class="form-control" aria-describedby="emailHelp" placeholder="Confirm Password">
+              </div>
+
+              <div class="col-md-12 text-center mb-3">
+                <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Get Started For Free</button>
+              </div>
+
+              <div class="col-md-12">
+
+                </form>
+                <div class="form-group">
+                  <p class="text-center"><a href="/login" id="signin">Already have an account?</a></p>
+                </div>
+              </div>
+              </div>
+        </div>
+			</div>
+		</div> 
+      
+</body>
+
+{% endblock content %}

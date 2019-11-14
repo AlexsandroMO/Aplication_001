@@ -1,0 +1,5 @@
+tinydb
+xlrd
+flask
+openpyxl
+pandas

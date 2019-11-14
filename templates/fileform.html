@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ <br>
+  <div class="div.margem">
+   <h3>Spreadsheet Upload</h3>
+    </div>
+    <br>
+    <div class="content-section">
+    <p>Entry Datas</p>
+
+        <form action="/handleUpload" method="post" enctype="multipart/form-data">
+            <input type="file" name="photo"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+
+    </div>
+<br>
+<br>
+
+
+{% endblock content %}
